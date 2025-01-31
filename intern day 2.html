@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        label, input, select {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .gender {
+            margin-bottom: 10px;
+        }
+        .gender label {
+            margin-right: 10px;
+        }
+        .gender input {
+            width: auto;
+            margin-right: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="registrationForm">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter student name" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
+
+        <div class="gender">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male"> Male
+            <input type="radio" id="female" name="gender" value="Female"> Female
+        </div>
+
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" name="qualification">
+            <option value="High School">High School</option>
+            <option value="Undergraduate">Undergraduate</option>
+            <option value="Postgraduate">Postgraduate</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <div class="buttons">
+            <button type="button" onclick="displayDetails()">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+        function displayDetails() {
+            // Get form values
+            const name = document.getElementById('name').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const gender = document.querySelector('input[name="gender"]:checked')?.value;
+            const qualification = document.getElementById('qualification').value;
+
+            // Display form details
+            const output = document.getElementById('output');
+            output.innerHTML = `
+                <h3>Submitted Details:</h3>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Password:</strong> ${password}</p>
+                <p><strong>Confirm Password:</strong> ${confirmPassword}</p>
+                <p><strong>Gender:</strong> ${gender ? gender : 'Not selected'}</p>
+                <p><strong>Qualification:</strong> ${qualification}</p>
+                <p><strong>Thank You For Submitting!!</strong></p>
+            `;
+        }
+    </script>
+</body>
+</html>
+</html>
+

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Treats Bakery</title>
+  <style>
+    /* Reset and Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Header Section */
+    header {
+      background: url('your-bakery-image.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.5em;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #ff6f61;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 0 10px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      background-color: #d84f39;
+      border-radius: 5px;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .menu-item {
+      display: inline-block;
+      width: 30%;
+      margin: 1.5em;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 400px; /* Fixed height for consistency */
+      object-fit: cover; /* Ensures the image covers the area without distortion */
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .menu-item h3 {
+      margin-top: 15px;
+      font-size: 1.6em;
+      color: #ff6f61;
+    }
+
+    .section-title {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ff6f61;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+    }
+
+    footer p {
+      font-size: 1.2em;
+    }
+
+    /* About, Menu, and Contact Sections */
+    .about-content, .contact-info {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2 class="section-title">Welcome to Our Bakery! Sweet Treats!!!</h2>
+    <p>Indulge in our delicious range of treats: Cakes, Cookies, Milkshakes, and more!</p>
+  </section>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a> <!-- Direct link to the Menu Section -->
+    <a href="#contact">Contact</a>
+  </nav>
+
+<!-- About Section -->
+<section id="about" style="padding: 50px 0; background-color: #f9f9f9;">
+    <div class="container">
+      <h2 class="section-title text-center" style="font-size: 2.5em; margin-bottom: 40px; color: #ff6f61;">About Us</h2>
+      <div class="row">
+        <!-- Bakery Overview -->
+        <div class="col-12 col-md-6">
+          <p class="about-paragraph">
+            <strong>Sweet Treats Bakery</strong> is a family-owned bakery that has been creating delicious cakes, cookies, and milkshakes for over 10 years. Our journey began with a humble vision: to offer quality baked goods made with love and passion. Each treat is carefully crafted with fresh, locally sourced ingredients to ensure the highest quality and taste.
+          </p>
+          <p class="about-paragraph">
+            We believe that food has the power to bring people together, and our bakery has become a cherished part of the community. Whether you're celebrating a special occasion or simply indulging in a sweet craving, we aim to provide the perfect treat for every moment. Our loyal customers keep coming back for the deliciousness, and we couldn’t be prouder of the relationships we’ve built over the years.
+          </p>
+          <p class="about-paragraph">
+            At Sweet Treats Bakery, we pride ourselves on our commitment to excellence. Each product is baked with precision and attention to detail, from the first mix to the final decoration. We specialize in custom cakes, cookies, pastries, and milkshakes, but we’re always experimenting with new flavors and recipes to keep things exciting. Join us in celebrating life’s sweet moments!
+          </p>
+        </div>
+  
+        <!-- Mission and Vision -->
+        <div class="col-12 col-md-6">
+          <div class="mission-vision">
+            <h3 class="about-heading">Our Mission</h3>
+            <p class="about-paragraph">
+              Our mission is to bring joy to every customer by offering fresh, homemade, and high-quality baked goods. We strive to create a warm and welcoming environment where customers feel like part of our bakery family. At Sweet Treats Bakery, we are dedicated to providing products that exceed expectations, whether it’s a custom cake for a wedding or a simple cookie to brighten your day.
+            </p>
+            <p class="about-paragraph">
+              We believe in supporting local businesses and sustainable practices, which is why we use only the best ingredients from trusted sources. Every product is crafted with care, ensuring that each bite is a moment of happiness. Our bakery is not just about selling treats – it’s about creating lasting memories, one delicious bite at a time.
+            </p>
+            <h3 class="about-heading">Our Vision</h3>
+            <p class="about-paragraph">
+              Our vision is to become the go-to bakery in the region, known for our exceptional quality, creativity, and customer service. We aim to expand our offerings and share our love for baking with a wider community. In the coming years, we hope to introduce new product lines, expand our delivery service, and build a stronger connection with our customers by embracing modern technology.
+            </p>
+            <p class="about-paragraph">
+              We also envision our bakery as a hub of creativity and inspiration, offering baking workshops, cooking classes, and a space where people can come together to learn, share, and enjoy the art of baking. Our commitment to quality, sustainability, and community will guide us as we grow and continue to create sweet memories for all.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- History Timeline -->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="section-heading text-center" style="color: #ff6f61; margin-top: 40px;">Our Bakery Journey</h3>
+          <ul class="timeline">
+            <li><strong>2015:</strong> Sweet Treats Bakery opened its doors with a simple yet ambitious vision: to offer the finest baked goods in the area. What started as a small neighborhood bakery quickly gained attention for its homemade treats and friendly service.</li>
+            <li><strong>2017:</strong> We expanded our menu to include a variety of cookies and milkshakes, and our popularity skyrocketed! Customers were thrilled by our unique flavor combinations and the opportunity to customize their orders.</li>
+            <li><strong>2020:</strong> We introduced custom cakes and began catering for special events like weddings and corporate functions. Our cakes became known for their intricate designs and delicious flavors, earning us a loyal customer base.</li>
+            <li><strong>2022:</strong> In response to growing demand, we launched our online store, allowing customers to place orders for delivery or pickup directly from our website. We also began offering baking kits and pre-packaged treats for those who wanted to recreate their favorite bakery items at home.</li>
+            <li><strong>2023:</strong> We became a staple in the community, offering delivery services and expanding our customer base both locally and online. Our bakery was also featured in several local food magazines, cementing our reputation as a top choice for baked goods in the region.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Meet the Team -->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="section-heading text-center" style="color: #ff6f61; margin-top: 40px;">Meet the Team</h3>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJdauKmK3JP7AREOlnMCR8e6f5i1-Ci0cNkA&s" alt="Founder" class="team-img"/>
+          <h4>Divya</h4>
+          <p><em>Founder & Head Baker</em></p>
+          <p>Divya is the heart and soul of Sweet Treats Bakery. With over 15 years of baking experience, she brings creativity and passion to every treat. Her love for baking started at a young age, and she has dedicated her life to perfecting the art of pastry making.</p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUN6dzs1op6vqCNYCd_oaLK2YavwHd5DalNw&s" alt="Baker" class="team-img"/>
+          <h4>Priya</h4>
+          <p><em>Baker</em></p>
+          <p>Priya is our lead baker, ensuring that each item meets the highest standards of quality. His expertise in pastry making has been invaluable to our success. He’s particularly skilled in creating intricate cake designs that leave customers in awe.</p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjl7xYqho8VFxvJSR9heh8UTerI6FW4KDbxA&s" alt="Manager" class="team-img"/>
+          <h4>Emily </h4>
+          <p><em>Customer Service Manager</em></p>
+          <p>Emily ensures that our customers have a memorable experience at Sweet Treats Bakery. She handles inquiries and helps with event planning for our clients. Her attention to detail and commitment to customer satisfaction are key to our success.</p>
+        </div>
+      </div>
+  
+      <!-- Customer Testimonials -->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="section-heading text-center" style="color: #ff6f61; margin-top: 40px;">What Our Customers Say</h3>
+          <blockquote>
+            "Sweet Treats Bakery made our wedding day extra special with their stunning custom cake. The flavor was incredible, and our guests couldn’t stop talking about it!" – <strong>Sarah and Mike</strong>
+          </blockquote>
+          <blockquote>
+            "I order cookies for my office every week, and they never disappoint! The chocolate chip cookies are a personal favorite!" – <strong>Tom, Office Manager</strong>
+          </blockquote>
+        </div>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="section-heading text-center" style="color: #ff6f61; margin-top: 40px;">Follow Us</h3>
+          <p class="text-center">Stay updated with our latest creations and promotions by following us on our social media platforms!</p>
+          <ul class="social-media text-center">
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Add the CSS to style the new elements -->
+  <style>
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+  
+    .section-title, .section-heading {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  
+    .about-paragraph {
+      text-align: justify;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  
+    .about-heading {
+      color: #ff6f61;
+      font-size: 1.5em;
+      margin-top: 15px;
+    }
+  
+    .timeline {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  
+    .timeline li {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+  
+    .team-img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+  
+    .testimonials blockquote {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #333;
+      border-left: 5px solid #ff6f61;
+      padding-left: 15px;
+    }
+  
+    .social-media {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      padding: 0;
+    }
+  
+    .social-media li a {
+      font-size: 1.2em;
+      color: #ff6f61;
+      text-decoration: none;
+    }
+  
+    .social-media li a:hover {
+      color: #d84f39;
+    }
+  
+    /* For responsive design */
+    @media (max-width: 768px) {
+      .team-member {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+  
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2 class="section-title">Our Menu</h2>
+    <div class="menu-item">
+      <a href="#cakes"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlgeluNDpcnftaLA1mJ7FcvA_OHRGOYae_jA&s" alt="Chocolate Cake"></a>
+      <h3> Cake</h3>
+      <p>A rich and creamy cake made to satisfy your cravings.</p>
+    </div>
+    <div class="menu-item">
+      <a href="#cookies"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUM3O9Qr5CWMnFBRkIygaEmW6dNfHE29K7Rg&s" alt="Chocolate Chip Cookies"></a>
+      <h3> Cookies</h3>
+      <p>Soft and chewy cookies filled with rich chocolate chips.</p>
+    </div>
+    <div class="menu-item">
+      <a href="#milkshakes"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWs0-HRO8XpBMOKU5KVUFqtW8drsRNPnwK4A&s" alt="Chocolate Milkshake"></a>
+      <h3>Milkshake</h3>
+      <p>Rich, creamy, and loaded with flavors.</p>
+    </div>
+  </section>
+
+  <!-- Cakes Section -->
+  <section id="cakes">
+    <h2 class="section-title">Cakes</h2>
+    <div class="menu-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSVXC9OmveSj8zlPuRIQWAmnLU2Bd-cgWxsQ&s" alt="Chocolate Cake">
+      <h3>Chocolate Cake</h3>
+      <p>A rich and creamy chocolate cake made to satisfy your cravings.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3IvYJmqidry0Oia1W5srqS4JGslx37amww&s" alt="Vanilla Cake">
+      <h3>Vanilla Cake</h3>
+      <p>A light and fluffy vanilla cake, perfect for any occasion.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2xgwLLMI9cYPTkaXoXXq1SQAjky4sWnycVw&s" alt="Strawberry Cake">
+      <h3>Strawberry Cake</h3>
+      <p>A delightful cake with fresh strawberries and a creamy frosting.</p>
+    </div>
+  </section>
+
+  <!-- Cookies Section -->
+  <section id="cookies">
+    <h2 class="section-title">Cookies</h2>
+    <div class="menu-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwAaEu-SBrf_TWi96d2YMI8g3WH3s7LdPEOg&s" alt="Chocolate Chip Cookies">
+      <h3>Chocolate Chip Cookies</h3>
+      <p>Soft and chewy cookies filled with rich chocolate chips.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCkunvoB6FFDZgsOvcc7e6nJizncGnuhqXWA&s" alt="Oatmeal Cookies">
+      <h3>Oatmeal Cookies</h3>
+      <p>Wholesome oatmeal cookies with a hint of cinnamon.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWgy-0oi1kGM_nzOKN-Aae7OGlQYhkc9mF3w&s" alt="Peanut Butter Cookies">
+      <h3>Peanut Butter Cookies</h3>
+      <p>Crispy and delicious, with the perfect peanut butter flavor.</p>
+    </div>
+  </section>
+
+  <!-- Milkshakes Section -->
+  <section id="milkshakes">
+    <h2 class="section-title">Milkshakes</h2>
+    <div class="menu-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5iEb8w87D6yIfuHPpVD0qSnKQIvf6dV0JYA&s" alt="Chocolate Milkshake">
+      <h3>Chocolate Milkshake</h3>
+      <p>Rich, creamy, and loaded with chocolate flavor.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPA93owct1mfT9r8CJhnKz758m64adZmJahA&s" alt="Vanilla Milkshake">
+      <h3>Vanilla Milkshake</h3>
+      <p>A classic vanilla milkshake with a smooth and creamy texture.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGnj-B9zYxxMtBXudJKI-GrYCavbo5N961QA&s" alt="Strawberry Milkshake">
+      <h3>Strawberry Milkshake</h3>
+      <p>Fresh and fruity, made with real strawberries.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-info">
+      <p>Sweet Treats Bakery</p>
+      <p>123 Dessert Lane, Bakery Town, Sweetville</p>
+      <p>Email: info@sweettreatsbakery.com</p>
+      <p>Phone: (123) 456-7890</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Sweet Treats Bakery. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
